@@ -7,7 +7,7 @@
 # 1 "D:/Program File/MPLabX/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "HDT07.c" 2
-# 15 "HDT07.c"
+# 209 "HDT07.c"
 # 1 "D:/Program File/MPLabX/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 1 3
 # 18 "D:/Program File/MPLabX/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -2488,7 +2488,7 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "D:/Program File/MPLabX/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\\pic\\include\\xc.h" 2 3
-# 15 "HDT07.c" 2
+# 209 "HDT07.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 1 3
 # 13 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdint.h" 3
@@ -2623,7 +2623,7 @@ typedef int16_t intptr_t;
 
 
 typedef uint16_t uintptr_t;
-# 16 "HDT07.c" 2
+# 210 "HDT07.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdio.h" 1 3
 
@@ -2722,310 +2722,266 @@ extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupport
 #pragma printf_check(sprintf) const
 extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
-# 17 "HDT07.c" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\string.h" 1 3
-# 14 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\string.h" 3
-extern void * memcpy(void *, const void *, size_t);
-extern void * memmove(void *, const void *, size_t);
-extern void * memset(void *, int, size_t);
-# 36 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\string.h" 3
-extern char * strcat(char *, const char *);
-extern char * strcpy(char *, const char *);
-extern char * strncat(char *, const char *, size_t);
-extern char * strncpy(char *, const char *, size_t);
-extern char * strdup(const char *);
-extern char * strtok(char *, const char *);
-
-
-extern int memcmp(const void *, const void *, size_t);
-extern int strcmp(const char *, const char *);
-extern int stricmp(const char *, const char *);
-extern int strncmp(const char *, const char *, size_t);
-extern int strnicmp(const char *, const char *, size_t);
-extern void * memchr(const void *, int, size_t);
-extern size_t strcspn(const char *, const char *);
-extern char * strpbrk(const char *, const char *);
-extern size_t strspn(const char *, const char *);
-extern char * strstr(const char *, const char *);
-extern char * stristr(const char *, const char *);
-extern char * strerror(int);
-extern size_t strlen(const char *);
-extern char * strchr(const char *, int);
-extern char * strichr(const char *, int);
-extern char * strrchr(const char *, int);
-extern char * strrichr(const char *, int);
-# 18 "HDT07.c" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdlib.h" 1 3
-
-
-
-
-
-
-typedef unsigned short wchar_t;
-
-
-
-
-
-
-
-typedef struct {
- int rem;
- int quot;
-} div_t;
-typedef struct {
- unsigned rem;
- unsigned quot;
-} udiv_t;
-typedef struct {
- long quot;
- long rem;
-} ldiv_t;
-typedef struct {
- unsigned long quot;
- unsigned long rem;
-} uldiv_t;
-# 65 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdlib.h" 3
-extern double atof(const char *);
-extern double strtod(const char *, const char **);
-extern int atoi(const char *);
-extern unsigned xtoi(const char *);
-extern long atol(const char *);
-
-
-
-extern long strtol(const char *, char **, int);
-
-extern int rand(void);
-extern void srand(unsigned int);
-extern void * calloc(size_t, size_t);
-extern div_t div(int numer, int denom);
-extern udiv_t udiv(unsigned numer, unsigned denom);
-extern ldiv_t ldiv(long numer, long denom);
-extern uldiv_t uldiv(unsigned long numer,unsigned long denom);
-
-
-
-extern unsigned long _lrotl(unsigned long value, unsigned int shift);
-extern unsigned long _lrotr(unsigned long value, unsigned int shift);
-extern unsigned int _rotl(unsigned int value, unsigned int shift);
-extern unsigned int _rotr(unsigned int value, unsigned int shift);
-
-
-
-
-extern void * malloc(size_t);
-extern void free(void *);
-extern void * realloc(void *, size_t);
-# 104 "C:\\Program Files\\Microchip\\xc8\\v2.31\\pic\\include\\c90\\stdlib.h" 3
-extern int atexit(void (*)(void));
-extern char * getenv(const char *);
-extern char ** environ;
-extern int system(char *);
-extern void qsort(void *, size_t, size_t, int (*)(const void *, const void *));
-extern void * bsearch(const void *, void *, size_t, size_t, int(*)(const void *, const void *));
-extern int abs(int);
-extern long labs(long);
-
-extern char * itoa(char * buf, int val, int base);
-extern char * utoa(char * buf, unsigned val, int base);
-
-
-
-
-extern char * ltoa(char * buf, long val, int base);
-extern char * ultoa(char * buf, unsigned long val, int base);
-
-extern char * ftoa(float f, int * status);
-# 19 "HDT07.c" 2
-
-
-
-
-# 1 "./ADC.h" 1
-# 14 "./ADC.h"
-#pragma config FOSC = INTRC_NOCLKOUT
-
-
-
-void ADC_config(char frec);
-# 23 "HDT07.c" 2
-
-
-
+# 211 "HDT07.c" 2
 
 
 
 
 
 #pragma config FOSC = INTRC_NOCLKOUT
+
+
 #pragma config WDTE = OFF
 #pragma config PWRTE = OFF
 #pragma config MCLRE = OFF
+
 #pragma config CP = OFF
+
 #pragma config CPD = OFF
+
 #pragma config BOREN = OFF
 #pragma config IESO = OFF
+
 #pragma config FCMEN = OFF
+
 #pragma config LVP = OFF
 
 
-#pragma config BOR4V = BOR40V
-#pragma config WRT = OFF
-# 54 "HDT07.c"
-uint8_t pot01, pot02, pot03, pot04;
-char valor01, valor02, valor03, valor04;
 
+
+#pragma config BOR4V = BOR40V
+
+#pragma config WRT = OFF
+
+
+
+
+
+
+
+uint8_t POT1;
+uint8_t POT2;
+uint8_t POT3;
+uint8_t POT4;
+char centenas;
+char decenas;
+char unidades;
+int a, b, c;
 
 
 
 
 void setup(void);
-void chanel(void);
 void putch(char data);
+void division(uint8_t variable);
 void text(void);
-
-
-
-
+void timer(void);
 
 void __attribute__((picinterrupt(("")))) isr(void){
 
-
-
-       if(PIR1bits.ADIF == 1)
-       {
-
-       if(ADCON0bits.CHS == 0) {
-             pot01 = ADRESH;
-
-           }
-
-        if(ADCON0bits.CHS == 1){
-            pot02 = ADRESH;
-           }
-
-        if(ADCON0bits.CHS == 2){
-            pot03 = ADRESH;
-
-
-             }
-       if(ADCON0bits.CHS == 3){
-            pot04 = ADRESH;
-
-             }
-
-           PIR1bits.ADIF = 0;
-       }
+    if (PIR1bits.ADIF == 1)
+    {
+        if (ADCON0bits.CHS == 0)
+        {
+            ADCON0bits.CHS = 1;
+            POT1 = ADRESH;
+        }
+        else if (ADCON0bits.CHS == 1)
+        {
+            ADCON0bits.CHS = 2;
+            POT2 = ADRESH;
+        }
+        else if (ADCON0bits.CHS == 2)
+        {
+            ADCON0bits.CHS = 3;
+            POT3 = ADRESH;
+        }
+        else if (ADCON0bits.CHS == 3)
+        {
+            ADCON0bits.CHS = 0;
+            POT4 = ADRESH;
+        }
+        _delay((unsigned long)((50)*(8000000/4000000.0)));
+        PIR1bits.ADIF = 0;
+    }
 }
-
 
 
 
 void main(void) {
     setup();
 
-    while(1){
+    while (1)
+    {
+    ADCON0bits.GO = 1;
 
-        chanel();
+    text();
 
-        text();
-
-
-    }
-    return;
+    timer();
 }
-
+}
 
 
 
 void setup(void){
+
     ANSEL = 0b00001111;
-    ANSELH = 0b00000000;
+    ANSELH = 0X00;
 
-    TRISBbits.TRISB0 = 1;
-    TRISBbits.TRISB1 = 1;
-    TRISBbits.TRISB2 = 1;
-    TRISBbits.TRISB3 = 1;
+    TRISAbits.TRISA0 = 1;
+    TRISAbits.TRISA1 = 1;
+    TRISAbits.TRISA2 = 1;
+    TRISAbits.TRISA3 = 1;
 
-
-    PORTA = 0x00;
-    PORTB = 0x00;
-    PORTC = 0x00;
-    PORTD = 0x00;
-    PORTE = 0x00;
+    PORTA = 0X00;
 
 
-    OSCCONbits.IRCF0 = 0;
-    OSCCONbits.IRCF1 = 1;
     OSCCONbits.IRCF2 = 1;
+    OSCCONbits.IRCF1 = 1;
+    OSCCONbits.IRCF0 = 1;
     OSCCONbits.SCS = 1;
 
 
-    PIE1bits.ADIE = 1;
-    PIR1bits.ADIF = 0;
-    INTCONbits.GIE = 1;
-    INTCONbits.PEIE = 1;
+
+    ADCON0bits.CHS = 0;
+
+    ADCON0bits.ADCS1 = 1;
+    ADCON0bits.ADCS0 = 1;
+
+    ADCON0bits.ADON = 1;
+
+    ADCON1bits.ADFM = 0;
+    ADCON1bits.VCFG0 = 0;
+    ADCON1bits.VCFG1 = 0;
 
 
-    ADC_config(2);
-
+    TXSTAbits.BRGH = 1;
+    BAUDCTLbits.BRG16 = 1;
 
     TXSTAbits.SYNC = 0;
-    TXSTAbits.BRGH = 1;
-    BAUDCTLbits.BRG16 = 0;
-
-    SPBRG = 25;
-    SPBRGH = 1;
-
     RCSTAbits.SPEN = 1;
-    RCSTAbits.RX9 = 0;
     RCSTAbits.CREN = 1;
-    TXSTAbits.TX9 = 0;
 
     TXSTAbits.TXEN = 1;
 
-    PIR1bits.RCIF = 0;
-    PIR1bits.TXIF = 0;
+    RCSTAbits.RX9 = 0;
+
+    SPBRG = 207;
+    SPBRGH = 0;
+
+
+    INTCONbits.GIE = 1;
+    PIR1bits.ADIF = 0;
+    PIE1bits.ADIE = 1;
+    INTCONbits.PEIE = 1;
 }
-
-void chanel(void){
-
-    if(ADCON0bits.GO == 0){
-            if(ADCON0bits.CHS == 0){
-                ADCON0bits.CHS = 1;
-            }
-            else if (ADCON0bits.CHS == 1){
-                ADCON0bits.CHS = 2;
-            }
-            else if (ADCON0bits.CHS == 2){
-                ADCON0bits.CHS = 3;
-            }
-            else if (ADCON0bits.CHS == 3){
-                ADCON0bits.CHS = 0;
-            }
-
-            _delay((unsigned long)((50)*(4000000/4000000.0)));
-            ADCON0bits.GO = 1;
-        }
-}
-
 void putch(char info){
 
     while (TXIF == 0);
     TXREG = info;
 
 }
+void division(uint8_t variable){
+    uint8_t val;
+    val = (variable);
+    centenas = (val/100);
+    val = (val - (centenas*100));
+    decenas = (val/10);
+    val = (val - (decenas*10));
+    unidades = (val);
 
-void text (void){
+    centenas = centenas + 48;
+    decenas = decenas + 48;
+    unidades = unidades + 48;
+}
 
+void text(void){
+     _delay((unsigned long)((50)*(8000000/4000.0)));
+     printf(" ");
+     _delay((unsigned long)((50)*(8000000/4000.0)));
+     division(POT1);
+     _delay((unsigned long)((50)*(8000000/4000.0)));
+     if(TXIF == 1){
+        TXREG = centenas;
+       }
+     _delay((unsigned long)((50)*(8000000/4000.0)));
+    if(TXIF == 1){
+        TXREG = decenas;
+       }
+    _delay((unsigned long)((50)*(8000000/4000.0)));
+    if(TXIF == 1){
+        TXREG = unidades;
+       }
+     _delay((unsigned long)((50)*(8000000/4000.0)));
+     printf(" ");
+     _delay((unsigned long)((50)*(8000000/4000.0)));
 
-        _delay((unsigned long)((150)*(4000000/4000.0)));
-     printf("%d %d %d %d", pot01, pot02, pot03, pot04 );
-     _delay((unsigned long)((150)*(4000000/4000.0)));
+     division(POT2);
+     _delay((unsigned long)((50)*(8000000/4000.0)));
+     if(TXIF == 1){
+        TXREG = centenas;
+       }
+     _delay((unsigned long)((50)*(8000000/4000.0)));
+    if(TXIF == 1){
+        TXREG = decenas;
+       }
+    _delay((unsigned long)((50)*(8000000/4000.0)));
+    if(TXIF == 1){
+        TXREG = unidades;
+       }
+     _delay((unsigned long)((50)*(8000000/4000.0)));
+     printf(" ");
+     _delay((unsigned long)((50)*(8000000/4000.0)));
 
+   division(POT3);
+     _delay((unsigned long)((50)*(8000000/4000.0)));
+     if(TXIF == 1){
+        TXREG = centenas;
+       }
+     _delay((unsigned long)((50)*(8000000/4000.0)));
+    if(TXIF == 1){
+        TXREG = decenas;
+       }
+    _delay((unsigned long)((50)*(8000000/4000.0)));
+    if(TXIF == 1){
+        TXREG = unidades;
+       }
+     _delay((unsigned long)((50)*(8000000/4000.0)));
+     printf(" ");
+     _delay((unsigned long)((50)*(8000000/4000.0)));
+
+     division(POT4);
+     _delay((unsigned long)((50)*(8000000/4000.0)));
+     if(TXIF == 1){
+        TXREG = centenas;
+       }
+     _delay((unsigned long)((50)*(8000000/4000.0)));
+    if(TXIF == 1){
+        TXREG = decenas;
+       }
+    _delay((unsigned long)((50)*(8000000/4000.0)));
+    if(TXIF == 1){
+        TXREG = unidades;
+       }
+     _delay((unsigned long)((50)*(8000000/4000.0)));
+
+    _delay((unsigned long)((50)*(8000000/4000.0)));
+     printf(" ");
+     _delay((unsigned long)((50)*(8000000/4000.0)));
+}
+
+void timer (void){
+    a = 1;
+    b = 0;
+
+    while (a == 1){
+        b = b + 1;
+        if (b == 30000){
+            a = 0;
+        }
+        else{
+            a = 1;
+        }
+    }
 
 }
